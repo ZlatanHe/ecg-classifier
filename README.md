@@ -1,10 +1,6 @@
 ## README
 
-
-
 **This project is maven copy of my fyp which finished at Apr 2017. The purpose to build this project, is to make it easier to run the fyp project with minimal effort spent in configure the runtime environment.**
-
-
 
 **Below is some configuration steps for Mac Os X Users.**
 
@@ -38,4 +34,3 @@
 1. In Terminal, go to the root directory of this project. Then execute ```mvn clean test```. If everything goes well, it means that the configuration works.
 
 *@Author: Zlatan W HO*
-
