@@ -2,7 +2,7 @@
 
 
 
-**This project is maven copy of my fyp which finished at Apr 2017. The purpose to build this project, is to make it easier to run the fyp project with minimal effort spent in configure the runtime environment. **
+**This project is maven copy of my fyp which finished at Apr 2017. The purpose to build this project, is to make it easier to run the fyp project with minimal effort spent in configure the runtime environment.**
 
 
 
