@@ -1,6 +1,6 @@
 ## README
 
-**This project is maven copy of my fyp which finished at Apr 2017. The purpose to build this project, is to make it easier to run the fyp project with minimal effort spent in configure the runtime environment.**
+**This project is a maven copy of my fyp which finished at Apr 2017. The purpose to build this project, is to make it easier to run the fyp project with minimal effort spent in configuring the runtime environment.**
 
 **Below is some configuration steps for Mac Os X Users.**
 
@@ -11,7 +11,7 @@
 1. Maven installation
    1. To make sure there is maven installed in your Mac, execute```mvn -version``` in Terminal. 
    2. If maven is not installed, there are two easy way to install:
-      1. **Homebrew user: execute ```brew install maven``` (Recommended)** or 
+      1. Homebrew user: execute ```brew install maven``` **(Recommended)** or 
       2. Follow the official guide http://maven.apache.org/install.html
 2. Matlab
    1. Make sure you have install Matlab in you Mac.
@@ -34,3 +34,4 @@
 1. In Terminal, go to the root directory of this project. Then execute ```mvn clean test```. If everything goes well, it means that the configuration works.
 
 *@Author: Zlatan W HO*
+
