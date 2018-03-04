@@ -1,0 +1,8 @@
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/mapper/db/PatientDbMapper.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/view/ViewConverter.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/constant/HeartbeatTypeEnum.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/entity/Patient.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/entity/HeartbeatLog.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/service/LogService.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/mapper/db/HeartbeatLogDbMapper.java
+/Users/zlatan/workspace/ecg-classifier/ecg-classifier-log/src/main/java/com/apple/ecg/log/LogConfiguration.java

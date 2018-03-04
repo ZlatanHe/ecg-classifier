@@ -1,0 +1,5 @@
+com/apple/ecg/matlabcontrol/MatlabControlConfiguration.class
+com/apple/ecg/matlabcontrol/property/MatlabControlProperties.class
+com/apple/ecg/matlabcontrol/demo/MatlabControlDemo.class
+com/apple/ecg/matlabcontrol/property/MatlabControlProperties$Detector.class
+com/apple/ecg/matlabcontrol/agent/EcgClassifierAgent.class

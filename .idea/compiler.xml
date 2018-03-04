@@ -6,11 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ecg-classifier" />
+        <module name="ecg-classifier-common" />
+        <module name="ecg-classifier-log" />
+        <module name="ecg-classifier-matlab" />
+        <module name="ecg-classifier-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ecg-classifier" target="1.5" />
+      <module name="ecg-classifier" target="1.8" />
+      <module name="ecg-classifier-common" target="1.8" />
+      <module name="ecg-classifier-dal" target="1.8" />
+      <module name="ecg-classifier-log" target="1.8" />
+      <module name="ecg-classifier-matlab" target="1.8" />
+      <module name="ecg-classifier-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ecg-classifier.iml" filepath="$PROJECT_DIR$/ecg-classifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecg-classifier-common/ecg-classifier-common.iml" filepath="$PROJECT_DIR$/ecg-classifier-common/ecg-classifier-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecg-classifier-log/ecg-classifier-log.iml" filepath="$PROJECT_DIR$/ecg-classifier-log/ecg-classifier-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecg-classifier-matlab/ecg-classifier-matlab.iml" filepath="$PROJECT_DIR$/ecg-classifier-matlab/ecg-classifier-matlab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecg-classifier-web/ecg-classifier-web.iml" filepath="$PROJECT_DIR$/ecg-classifier-web/ecg-classifier-web.iml" />
     </modules>
   </component>
 </project>

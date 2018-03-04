@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<div>Input ECG signal (freq: 180Hz) and classifiy the heartbeats.</div>
+<h3>Please input ecg data here: </h3><br>
+<textarea id = "ecg" cols = "100" rows = "10">
+	</textarea>
+<br/><button type="button" onclick="classification()">Go</button>
+<p id = "response"></p>
+
+<script>
+    function createRequest() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        return xmlhttp;
+    }
+
+    function classification() {
+        var req = createRequest();
+        var testPatientId = "550bb16ba58e46759bc5df4f78409fec";
+        var ecg = document.getElementById("ecg").value;
+        var response = document.getElementById("response");
+        var responseXML;
+        var url = "http://localhost:8080/ecg/classification/" + testPatientId +"/" + ecg;
+        req.onreadystatechange = function() {
+            if (req.readyState == 4 && req.status == 200) {
+                responseXML = req.responseText;
+                parser = new DOMParser();
+                xmlDoc = parser.parseFromString(responseXML,"text/xml");
+                var element = xmlDoc.getElementsByTagName("status")[0];
+                var child = element.childNodes[0];
+                var status = child.nodeValue;
+                switch(status) {
+                    case "0":
+                        response.innerHTML = "Classification system is initializing.";
+                        break;
+                    case "1":
+                        response.innerHTML = "Normal";
+                        break;
+                    case "2":
+                        var numOfBeats = parseInt(xmlDoc.getElementsByTagName("arrhythmia")[0].childNodes[0].nodeValue);
+                        var responseText = "Abnormal! " + numOfBeats + " arrhythmic beats:<br/>";
+                        for (i = 1; i <= numOfBeats; i++) {
+                            // Loop to get the informations of abnormal beats one by one
+                            var tag1 = "type" + i;
+                            var tag2 = "ecg" + i;
+                            var type = xmlDoc.getElementsByTagName(tag1)[0].childNodes[0].nodeValue;// Type of abnormal beats
+                            var ecg = xmlDoc.getElementsByTagName(tag2)[0].childNodes[0].nodeValue;// ECG signal of abnormal beats
+                            responseText = responseText + tag1 + ": " + type + "<br/>";
+                            responseText = responseText + tag2 + ": " + ecg + "<br/>";
+                        }
+                        response.innerHTML = responseText;
+                        break;
+                    default:
+                        response.innerHTML = "Exceptions encountered in invoking web service.";
+                        break;
+                }
+            }
+        }
+        req.open("GET", url, true);
+        req.send();
+    }
+</script>
+</body>
+</html>
