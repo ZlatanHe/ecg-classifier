@@ -38,7 +38,7 @@ public class EcgController {
         return ecgClassifierAgent.classify(ecgArray, patientId);
     }
 
-    @RequestMapping(value = “/error_log",
+    @RequestMapping(value = "/error_log",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public String queryLog(@Param("patientId") String patientId) {
