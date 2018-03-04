@@ -24,7 +24,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <matlab.control.path>/Users/zlatan/.m2/repository/matlab/matlab-control/1.0/matlabcontrol-4.1.0.jar</matlab.control.path>
+        <matlab.control.path>/Users/apple/component/apache-tomcat-8.5.28/webapps/FYP/WEB-INF/lib/matlabcontrol-4.1.0.jar</matlab.control.path>
         <spring.boot.starter.version>1.5.9.RELEASE</spring.boot.starter.version>
         <mysql.connector.version>5.1.39</mysql.connector.version>
         <hikari.version>2.5.1</hikari.version>
